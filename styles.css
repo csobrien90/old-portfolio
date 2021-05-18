@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: gray;
+    padding: 10px;
+    color: white;
+}
+
+#welcome {
+    display: inline-block;
+    padding: 10px;
+    max-width: 32%;
+    font-size: 1.7em;
+    text-align: left;
+    margin: 0 5%;
+}
+
+.arrow {
+    display: inline-block;
+    position: absolute;
+    width: 6%;
+    font-size: 4em;
+    text-align: center;
+    margin: 110px 0;
+}
+
+.cardSlider {
+    width: 100%;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.cardList {
+    margin-left: 6.5%;
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    width: 88%;
+}
+
+.card {
+    vertical-align: top;
+    max-width: 30%;
+    height: 300px;
+    display: inline-block;
+    padding: 40px;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+/* Headers */
+
+h1 {
+    font-size: 8em;
+    display: inline-block;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 20px 0;
+}
