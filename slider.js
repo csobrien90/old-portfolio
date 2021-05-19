@@ -18,12 +18,16 @@ forwardArrow.addEventListener("click", scrollForward);
 
 // Functions
 
-function scrollBack() {
-    projectList.style.left = "-600px";
+function scrollForward() {
+    let position = projectList.style.left.replace("px", "");
+    let newPos = +position - 300;
+    projectList.style.left = `${newPos}px`;
 }
 
-function scrollForward() {
-    projectList.style.left = "600px";
+function scrollBack() {
+    let position = projectList.style.left.replace("px", "");
+    let newPos = +position + 300;
+    projectList.style.left = `${newPos}px`;
 }
 
 function arrowHover() {

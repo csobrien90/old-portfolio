@@ -34,8 +34,8 @@ header {
     height: 450px;
     padding: 20px;
     vertical-align: top;
-    overflow: hidden;
     z-index: -10;
+    white-space: nowrap;
 }
 
 .cardList {
@@ -48,6 +48,8 @@ header {
 
 #projectsCardList {
     position: relative;
+    left: 0;
+    transition: left .5s;
 }
 
 .card {
@@ -58,6 +60,7 @@ header {
     padding: 40px;
     margin: 20px;
     border: 1px solid black;
+    white-space: normal;
 }
 
 /* Headers */
