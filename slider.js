@@ -20,20 +20,31 @@ forwardArrow.addEventListener("click", scrollForward);
 
 function scrollForward() {
     let position = projectList.style.left.replace("px", "");
-    let newPos = +position - 300;
-    projectList.style.left = `${newPos}px`;
+    let cardNum = countCards();
+    let maxWidth = (cardNum -3) * -440; 
+    if (position > maxWidth) {
+        let newPos = +position - 440;
+        projectList.style.left = `${newPos}px`;
+    }
 }
 
 function scrollBack() {
     let position = projectList.style.left.replace("px", "");
-    let newPos = +position + 300;
-    projectList.style.left = `${newPos}px`;
+    if (position < 0) {
+        let newPos = +position + 440;
+        projectList.style.left = `${newPos}px`;
+    }
 }
 
 function arrowHover() {
-    this.style.border = "10px solid blue";
+    this.style.textShadow = "0 2px 2px gray";
 }
 
 function arrowAntiHover() {
-    this.style.border = "unset";
+    this.style.textShadow = "unset";
+}
+
+function countCards() {
+    let count = document.getElementsByClassName("card").length;
+    return(count);
 }
