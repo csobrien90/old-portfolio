@@ -23,10 +23,22 @@ header {
     display: inline-block;
     position: absolute;
     width: 6%;
+    top: 193px;
+    height: 300px;
     font-size: 4em;
     text-align: center;
     margin: 110px 0;
-    z-index: 1;
+    z-index: 10;
+    background-color: white;
+    border: 0;
+}
+
+#backArrow {
+    left: 0;
+}
+
+#forwardArrow {
+    right: 0;
 }
 
 .cardSlider {
@@ -39,24 +51,19 @@ header {
     overflow: hidden;
 }
 
-#myProjects a {
-    text-decoration: none;
-    color: unset;
-    position: absolute;
-}
-
 .cardList {
     margin-left: 6.5%;
     list-style-type: none;
     padding: 0;
     display: inline-block;
-    width: 88%;
+    max-width: 88%;
 }
 
 #projectsCardList {
     position: relative;
     left: 0;
     transition: left .5s;
+    overflow: ellipsis;
 }
 
 .card {

@@ -12,8 +12,8 @@ forwardArrow.addEventListener("mouseover", arrowHover);
 backArrow.addEventListener("mouseout", arrowAntiHover);
 forwardArrow.addEventListener("mouseout", arrowAntiHover);
 
-backArrow.addEventListener("click", scrollBack);
-forwardArrow.addEventListener("click", scrollForward);
+backArrow.addEventListener("mouseover", scrollBack);
+forwardArrow.addEventListener("mouseover", scrollForward);
 
 
 // Functions
