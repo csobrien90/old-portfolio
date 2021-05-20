@@ -26,7 +26,6 @@ header {
     top: calc(2em +20px);
     height: 340px;
     font-size: 4em;
-    text-align: center;
     margin: 0;
     z-index: 10;
     background-color: unset;
@@ -34,11 +33,13 @@ header {
 }
 
 #backArrow {
+    text-align: left;
     left: 0;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, .1) 100%);
 }
 
 #forwardArrow {
+    text-align: right;
     right: 0;
     background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, .1) 100%);
 }
