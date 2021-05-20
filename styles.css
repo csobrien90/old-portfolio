@@ -22,10 +22,10 @@ header {
 .arrow {
     display: inline-block;
     position: absolute;
-    width: 12%;
+    width: 6%;
     top: calc(2em +20px);
     height: 340px;
-    font-size: 4em;
+    font-size: 2em;
     margin: 0;
     z-index: 10;
     background-color: unset;
@@ -122,7 +122,7 @@ h2 {
         margin: 20px 0;
     }
     .arrow {
-        width: 6%;
+        font-size: 4em;
         height: 320px;
     }
     .card {
