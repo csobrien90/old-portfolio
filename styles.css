@@ -22,12 +22,12 @@ header {
 .arrow {
     display: inline-block;
     position: absolute;
-    width: 6%;
-    top: 193px;
-    height: 300px;
+    width: 15%;
+    top: calc(2em +20px);
+    height: 340px;
     font-size: 4em;
     text-align: center;
-    margin: 110px 0;
+    margin: 0;
     z-index: 10;
     background-color: unset;
     border: 0;
@@ -35,17 +35,17 @@ header {
 
 #backArrow {
     left: 0;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, .1) 100%);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, .1) 100%);
 }
 
 #forwardArrow {
     right: 0;
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, .1) 100%);
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, .1) 100%);
 }
 
 .cardSlider {
     width: 100%;
-    height: 450px;
+    height: auto;
     padding: 20px;
     vertical-align: top;
     z-index: -10;
@@ -65,16 +65,15 @@ header {
     position: relative;
     left: 0;
     transition: left .5s;
-    overflow: ellipsis;
 }
 
 .card {
     vertical-align: top;
-    max-width: 30%;
     height: 300px;
+    width: 260px;
     display: inline-block;
-    padding: 40px;
-    margin: 20px;
+    padding: 20px;
+    margin: 10px 20px;
     border: 1px solid black;
     white-space: normal;
 }
@@ -102,10 +101,10 @@ h1 {
 
 h2 {
     font-size: 2em;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 960px) {
     h1 {
         display: inline-block;
         width: 55%;
@@ -117,5 +116,19 @@ h2 {
         width: 40%;
         margin: 0 auto;
         font-size: 2vw;
+    }
+    h2 {
+        margin: 20px 0;
+    }
+    .arrow {
+        width: 6%;
+        height: 320px;
+    }
+    .card {
+        padding: 20px;
+        margin: 10px 20px;
+    }
+    .cardList {
+        margin-left: 3%;
     }
 }

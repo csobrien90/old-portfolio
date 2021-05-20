@@ -12,26 +12,27 @@ forwardArrow.addEventListener("mouseover", arrowHover);
 backArrow.addEventListener("mouseout", arrowAntiHover);
 forwardArrow.addEventListener("mouseout", arrowAntiHover);
 
-backArrow.addEventListener("mouseover", scrollBack);
-forwardArrow.addEventListener("mouseover", scrollForward);
-
+backArrow.addEventListener("click", scrollBack);
+forwardArrow.addEventListener("click", scrollForward);
 
 // Functions
 
 function scrollForward() {
     let position = projectList.style.left.replace("px", "");
     let cardNum = countCards();
-    let maxWidth = (cardNum -3) * -440; 
+    let cardWidth = 306;
+    let maxWidth = (cardNum - 1) * -cardWidth; 
     if (position > maxWidth) {
-        let newPos = +position - 440;
+        let newPos = +position - cardWidth;
         projectList.style.left = `${newPos}px`;
     }
 }
 
 function scrollBack() {
     let position = projectList.style.left.replace("px", "");
+    let cardWidth = 306;
     if (position < 0) {
-        let newPos = +position + 440;
+        let newPos = +position + cardWidth;
         projectList.style.left = `${newPos}px`;
     }
 }
