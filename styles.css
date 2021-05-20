@@ -22,7 +22,7 @@ header {
 .arrow {
     display: inline-block;
     position: absolute;
-    width: 10%;
+    width: 12%;
     top: calc(2em +20px);
     height: 340px;
     font-size: 4em;
