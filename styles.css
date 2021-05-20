@@ -11,12 +11,12 @@ header {
 }
 
 #welcome {
-    display: inline-block;
+    display: block;
     padding: 10px;
-    max-width: 32%;
-    font-size: 1.7em;
-    text-align: left;
-    margin: 0 5%;
+    width: 85%;
+    font-size: 4vw;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .arrow {
@@ -81,6 +81,7 @@ header {
 
 #aboutMe {
     padding: 0 20px;
+    text-align: justify;
 }
 
 footer {
@@ -92,12 +93,29 @@ footer {
 /* Headers */
 
 h1 {
-    font-size: 8em;
-    display: inline-block;
-    padding: 10px;
+    display: block;
+    font-size: 12vw;
+    padding: 10px 10px 0;
+    width: 100%;
+    text-align: center;
 }
 
 h2 {
     font-size: 2em;
     margin: 20px 0;
+}
+
+@media screen and (min-width: 740px) {
+    h1 {
+        display: inline-block;
+        width: 55%;
+        font-size: 8vw;
+        text-align: left;
+    }    
+    #welcome {
+        display: inline-block;
+        width: 40%;
+        margin: 0 auto;
+        font-size: 2vw;
+    }
 }
