@@ -65,13 +65,13 @@ header {
 #projectsCardList {
     position: relative;
     left: 0;
-    transition: left .5s;
+    transition: left .1s;
 }
 
 .card {
     vertical-align: top;
     height: 300px;
-    width: 260px;
+    width: 500px;
     display: inline-block;
     padding: 20px;
     margin: 10px 20px;
