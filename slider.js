@@ -23,9 +23,9 @@ forwardArrow.addEventListener("mouseout", stopScroll)
 function scrollForward() {
     repeater=setInterval(slide, 1);
     function slide() {
-        let maxWidth = (countCards() - 1) * -350;
+        let maxScrollWidth = countCards() * -320;
         let position = projectList.style.left.replace("px", "");
-        if (position > maxWidth) {
+        if (position > maxScrollWidth) {
             let newPos = +position - 3; 
             projectList.style.left = `${newPos}px`;
         }
@@ -35,9 +35,9 @@ function scrollForward() {
 function scrollBack() {
     repeater=setInterval(slide, 1);
     function slide() {
-        let maxWidth = 0;
+        let maxScrollWidth = 0;
         let position = projectList.style.left.replace("px", "");
-        if (position < maxWidth) {
+        if (position < maxScrollWidth) {
             let newPos = +position + 3; 
             projectList.style.left = `${newPos}px`;
         }
