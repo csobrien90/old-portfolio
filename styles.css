@@ -80,11 +80,20 @@ header {
     white-space: normal;
     flex: 1;
     box-shadow: 3px 3px 5px lightgrey;
+    overflow: auto;
 }
 
 .card p {
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: center;
+}
+
+.card a:active, .card a:visited {
+    color: black;
+}
+
+.card a:hover, .card a:active {
+    color: blue;
 }
 
 #aboutMe {
@@ -144,5 +153,12 @@ h3 {
     }
     .cardList {
         margin-left: 3%;
+    }   
+    .card p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    #aboutMe p {
+        font-size: 1.2em;
     }
 }
