@@ -100,6 +100,7 @@ h1 {
     font-weight: lighter;
     font-family: sans-serif;
     letter-spacing: -3px;
+    line-height: 100%;
 }
 
 h2 {
@@ -119,6 +120,32 @@ h3 {
     }
 }
 
+@media screen and (min-width: 720px) {
+    .arrow {
+        display: unset;
+        font-size: 4em;
+        height: 350px;
+        z-index: 100;
+        position: absolute;
+        top: calc(29vw + 100px);
+        background-color: unset;
+        border: 0;
+    }
+    #scrollBack {
+        text-align: left;
+        width: 4%;
+        left: 0;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, .5) 100%);
+    }
+    
+    #scrollForward {
+        text-align: right;
+        width: 5%;
+        right: 0;
+        background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, .5) 100%);
+    }
+}
+
 @media screen and (min-width: 960px) {
     h1 {
         display: inline-block;
@@ -135,21 +162,9 @@ h3 {
     h2 {
         margin: 20px 0;
     }
-/* 
-    #backArrow {
-        text-align: left;
-        width: 4%;
-        left: 0;
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, .5) 100%);
+    .arrow {
+        top: calc(8vw + 2em);
     }
-    
-    #forwardArrow {
-        text-align: right;
-        width: 6%;
-        right: 0;
-        background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, .5) 100%);
-    } */
-
     .card {
         margin: 10px;
     }
