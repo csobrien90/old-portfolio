@@ -22,28 +22,7 @@ header {
 }
 
 .arrow {
-    display: inline-block;
-    position: absolute;
-    width: 6%;
-    top: calc(2em +20px);
-    height: 340px;
-    font-size: 2em;
-    margin: 0;
-    z-index: 10;
-    background-color: unset;
-    border: 0;
-}
-
-#backArrow {
-    text-align: left;
-    left: 0;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, .1) 100%);
-}
-
-#forwardArrow {
-    text-align: right;
-    right: 0;
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, .1) 100%);
+    display: none;
 }
 
 .cardSlider {
@@ -57,24 +36,25 @@ header {
 }
 
 .cardList {
-    margin-left: 6.5%;
     list-style-type: none;
     padding: 0;
-    display: inline-block;
-    max-width: 92%;
+    display: flex;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.cardList::-webkit-scrollbar {
+    display: none;
 }
 
 #projectsCardList {
+    margin: 0;
     position: relative;
-    left: 0;
-    transition: left .1s;
 }
 
 .card {
-    vertical-align: top;
-    display: inline-block;
     height: 320px;
-    max-width: 400px;
+    min-width: 86vw;
     padding: 20px;
     margin: 10px 10px 10px 0;
     border-radius: 1em;
@@ -133,6 +113,12 @@ h3 {
     margin-bottom: 10px;
 }
 
+@media screen and (min-width: 440px) {
+    .card {
+        min-width: 400px;
+    }
+}
+
 @media screen and (min-width: 960px) {
     h1 {
         display: inline-block;
@@ -149,21 +135,33 @@ h3 {
     h2 {
         margin: 20px 0;
     }
-    .arrow {
-        font-size: 4em;
-        height: 320px;
+/* 
+    #backArrow {
+        text-align: left;
+        width: 4%;
+        left: 0;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, .5) 100%);
     }
+    
+    #forwardArrow {
+        text-align: right;
+        width: 6%;
+        right: 0;
+        background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, .5) 100%);
+    } */
+
     .card {
         margin: 10px;
     }
-    .cardList {
-        margin-left: 3%;
-    }   
     .card p {
         font-size: 1.2em;
         text-align: center;
     }
     #aboutMe p {
         font-size: 1.2em;
+    }
+    #projectsCardList {
+        max-width: 96%;
+        margin: 0 auto;
     }
 }
